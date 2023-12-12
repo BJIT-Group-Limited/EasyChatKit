@@ -7,10 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		516711312B28675A00170B6E /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 516711302B28675A00170B6E /* Onboarding.storyboard */; };
+		516711382B2867BD00170B6E /* OnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516711372B2867BD00170B6E /* OnboardingVC.swift */; };
 		84BB96F32B2864EB00519C35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BB96F22B2864EB00519C35 /* AppDelegate.swift */; };
-		84BB96F52B2864EB00519C35 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BB96F42B2864EB00519C35 /* SceneDelegate.swift */; };
-		84BB96F72B2864EB00519C35 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BB96F62B2864EB00519C35 /* ViewController.swift */; };
-		84BB96FA2B2864EB00519C35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84BB96F82B2864EB00519C35 /* Main.storyboard */; };
 		84BB96FC2B2864ED00519C35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84BB96FB2B2864ED00519C35 /* Assets.xcassets */; };
 		84BB96FF2B2864ED00519C35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84BB96FD2B2864ED00519C35 /* LaunchScreen.storyboard */; };
 		84BB970A2B2864ED00519C35 /* DemoEasyChatKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BB97092B2864ED00519C35 /* DemoEasyChatKitTests.swift */; };
@@ -37,11 +36,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		516711302B28675A00170B6E /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
+		516711372B2867BD00170B6E /* OnboardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVC.swift; sourceTree = "<group>"; };
 		84BB96EF2B2864EB00519C35 /* DemoEasyChatKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoEasyChatKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84BB96F22B2864EB00519C35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		84BB96F42B2864EB00519C35 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		84BB96F62B2864EB00519C35 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		84BB96F92B2864EB00519C35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84BB96FB2B2864ED00519C35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84BB96FE2B2864ED00519C35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84BB97002B2864ED00519C35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -78,6 +76,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5167112F2B28674900170B6E /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				516711302B28675A00170B6E /* Onboarding.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		516711322B28676300170B6E /* Chatkit */ = {
+			isa = PBXGroup;
+			children = (
+				516711352B28678A00170B6E /* ViewModel */,
+				516711342B28678100170B6E /* View */,
+				516711332B28677600170B6E /* Model */,
+			);
+			path = Chatkit;
+			sourceTree = "<group>";
+		};
+		516711332B28677600170B6E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		516711342B28678100170B6E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5167112F2B28674900170B6E /* Storyboard */,
+				516711372B2867BD00170B6E /* OnboardingVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		516711352B28678A00170B6E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		516711392B28681F00170B6E /* App */ = {
+			isa = PBXGroup;
+			children = (
+				84BB96F22B2864EB00519C35 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		84BB96E62B2864EB00519C35 = {
 			isa = PBXGroup;
 			children = (
@@ -101,10 +148,8 @@
 		84BB96F12B2864EB00519C35 /* DemoEasyChatKit */ = {
 			isa = PBXGroup;
 			children = (
-				84BB96F22B2864EB00519C35 /* AppDelegate.swift */,
-				84BB96F42B2864EB00519C35 /* SceneDelegate.swift */,
-				84BB96F62B2864EB00519C35 /* ViewController.swift */,
-				84BB96F82B2864EB00519C35 /* Main.storyboard */,
+				516711392B28681F00170B6E /* App */,
+				516711322B28676300170B6E /* Chatkit */,
 				84BB96FB2B2864ED00519C35 /* Assets.xcassets */,
 				84BB96FD2B2864ED00519C35 /* LaunchScreen.storyboard */,
 				84BB97002B2864ED00519C35 /* Info.plist */,
@@ -239,9 +284,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				516711312B28675A00170B6E /* Onboarding.storyboard in Resources */,
 				84BB96FF2B2864ED00519C35 /* LaunchScreen.storyboard in Resources */,
 				84BB96FC2B2864ED00519C35 /* Assets.xcassets in Resources */,
-				84BB96FA2B2864EB00519C35 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,9 +311,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84BB96F72B2864EB00519C35 /* ViewController.swift in Sources */,
 				84BB96F32B2864EB00519C35 /* AppDelegate.swift in Sources */,
-				84BB96F52B2864EB00519C35 /* SceneDelegate.swift in Sources */,
+				516711382B2867BD00170B6E /* OnboardingVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,14 +349,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		84BB96F82B2864EB00519C35 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				84BB96F92B2864EB00519C35 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		84BB96FD2B2864ED00519C35 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -454,9 +490,8 @@
 				INFOPLIST_FILE = DemoEasyChatKit/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIMainStoryboardFile = Onboarding;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -482,9 +517,8 @@
 				INFOPLIST_FILE = DemoEasyChatKit/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIMainStoryboardFile = Onboarding;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
