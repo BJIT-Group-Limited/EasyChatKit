@@ -1,7 +1,7 @@
 import XCTest
-@testable import EasyChatKit
+@testable import EsayChatKit
 
-final class EasyChatKitTests: XCTestCase {
+final class EsayChatKitTests: XCTestCase {
     func testExample() throws {
         // XCTest Documentation
         // https://developer.apple.com/documentation/xctest
